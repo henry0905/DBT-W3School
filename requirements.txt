@@ -1,0 +1,3 @@
+boto3>=1.18.12
+dbt-coverage==0.3.2
+dbt-bigquery==1.5.3

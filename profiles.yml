@@ -1,0 +1,15 @@
+dbt_demo:
+  outputs:
+    local:
+      type: bigquery
+      method: oauth
+      project: my-project-demo-392216
+      dataset: dev
+      threads: 8
+    prod:
+      type: bigquery
+      method: oauth
+      project: my-project-demo-392216
+      dataset: prod
+      threads: 8
+  target: local

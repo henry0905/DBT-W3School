@@ -1,0 +1,6 @@
+target/
+Scripts/
+dbt_packages/
+logs/
+.vscode/
+KEOD_2019_55_CR.pdf

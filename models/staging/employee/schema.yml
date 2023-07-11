@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: employee
+    description: "Employee Data"
+    database: my-project-demo-392216
+    schema: prod
+    tables:
+      - name: t_employees
+        description: "contains information of employees whom are reponsible for orders"
+
+models:
+  - name: stg_employee
+    columns:
+      - name: _EmployeeID_
+        tests:
+          - not_null
+          - unique

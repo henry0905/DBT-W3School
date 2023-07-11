@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: order
+    description: "Order Data"
+    database: my-project-demo-392216
+    schema: prod
+    tables:
+      - name: t_orders
+        description: "contains information of orders"
+
+models:
+  - name: stg_order
+    columns:
+      - name: _OrderID_
+        tests:
+          - not_null
+          - unique

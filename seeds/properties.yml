@@ -1,0 +1,33 @@
+version: 2
+
+seeds:
+  - name: t_seed_categories
+    config:
+      column_types:
+        CategoryID: string
+    columns:
+      - name: CategoryID
+        tests:
+        - not_null
+        - unique
+      - name: CategoryName
+        tests:
+        - not_null
+      - name: Description
+        tests:
+        - not_null
+  - name: t_seed_shippers
+    config:
+      column_types:
+        ShipperID: integer
+    columns:
+      - name: ShipperID
+        tests:
+        - not_null
+        - unique
+      - name: ShipperName
+        tests:
+        - not_null
+      - name: Phone
+        tests:
+        - not_null

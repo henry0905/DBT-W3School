@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: customer
+    description: "Customer Data"
+    database: my-project-demo-392216
+    schema: prod
+    tables:
+      - name: t_customers
+        description: "contains all customer details"
+models:
+  - name: stg_customer
+    columns:
+      - name: _CustomerID_
+        tests:
+          - not_null
+          - unique
